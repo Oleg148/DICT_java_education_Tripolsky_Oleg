@@ -11,6 +11,7 @@ public class ChatBot {
         int remainder7;
         int age;
         int num;
+        int your_answer;
 
         System.out.println("""
                 Hello! My name is DICT_Bot.
@@ -39,5 +40,23 @@ public class ChatBot {
             System.out.println(i + " !");
         }
 
+        System.out.println("""
+                Let's test your programming knowledge.
+                Why do we use methods?
+                1. To repeat a statement multiple times.
+                2. To decompose a program into several small subroutines.
+                3. To determine the execution time of a program.
+                4. To interrupt the execution of a program.""");
+
+        for (;;){
+            your_answer = user.nextInt();
+            if (your_answer == 2) {
+                break;
+            }
+            else {
+                System.out.println("Please, try again.");
+            }
+        }
+        System.out.println("Goodbye, have a nice day!");
     }
 }
